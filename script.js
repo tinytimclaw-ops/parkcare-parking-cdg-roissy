@@ -31,7 +31,7 @@ const depart = 'CDG';
 // Initialize map and dates
 window.addEventListener('DOMContentLoaded', function() {
   // Initialize Leaflet map
-  const parkingCoords = [49.042722, 2.505222]; // Hello Park Roissy
+  const parkingCoords = [49.04804, 2.49747]; // Hello Park Roissy - 32 Avenue de la Gare, 95380 Louvres
   const airportCoords = [49.009691, 2.547925]; // CDG Airport
 
   // Create map centered between both points
