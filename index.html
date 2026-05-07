@@ -17,8 +17,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
+
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 
   <!-- Script -->
   <script src="script.js" defer></script>
@@ -149,17 +159,7 @@
         <!-- Right: Map -->
         <div class="map-container">
           <h3>Localisation</h3>
-          <div class="map-embed">
-            <iframe
-              width="100%"
-              height="400"
-              style="border:0"
-              loading="lazy"
-              allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d42000!2d2.5250!3d49.0200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47e61f5a8e8e8e8f%3A0x1234567890abcdef!2s32%20Avenue%20de%20la%20gare%2C%2095380%20Louvres%2C%20France!3m2!1d49.042722!2d2.505222!4m5!1s0x47e61dbfc60832db%3A0xd421a37e6c255f58!2sA%C3%A9roport%20Paris-Charles%20de%20Gaulle%2C%20France!3m2!1d49.009691!2d2.547925!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr">
-            </iframe>
-          </div>
+          <div id="map" class="map-embed"></div>
           <div class="address-box">
             <h4>📍 Adresse</h4>
             <p>Hello Park Roissy<br>32 Avenue de la gare<br>95380 Louvres</p>
